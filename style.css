@@ -2,21 +2,23 @@
   margin: 0;
   padding: 0;
 }
-body{
-  font-family:outfit, sans-serif;
+body {
+  font-family: outfit, sans-serif;
+  box-sizing: border-box;
 }
 header {
   width: 100%;
   height: 120px;
   background-color: #2089b9;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-size: 30px;
 }
 .logo {
-  width: 150px;
-  height: 100px;
+  width: 100px;
+  height: 80px;
   color: white;
 }
 ul {
@@ -30,10 +32,21 @@ ul {
   }
 }
 
+.hamburger-icon {
+  font-size: 30px;
+  color: white;
+  background: none;
+  display: none;
+
+  i {
+    color: white;
+  }
+}
+
 /* herooooooooooooooo */
-.hero{
+.hero {
   width: 100%;
-  height: 250px;
+  /* height: 250px; */
   background-color: rgb(236, 234, 234);
 
   display: flex;
@@ -41,6 +54,7 @@ ul {
 }
 .hero-conteiner {
   width: 80%;
+  padding: 40px;
 
   display: flex;
   justify-content: space-qround;
@@ -50,25 +64,11 @@ ul {
 .left {
   color: rgb(99, 99, 239);
   width: 45%;
-  height: 150px;
+  /* height: 150px; */
 }
 .right {
   width: 50%;
-  height: 150px;
-}
-
-@media 
-
-
-
-
-/* hero endddddd */
-
-
-.cards {
-  width: 100%;
-  height: 300px;
-  background-color: whitesmoke;
+  /* height: 150px; */
 }
 
 .cardss {
@@ -100,8 +100,11 @@ hr {
   border-top: 2px solid black;
 }
 
+/* bbbbbbbbbbbbbb */
 
 .background-txt {
+  margin-top: 50px;
+  padding-top: 80px;
   width: 100%;
   height: 300px;
   background-color: whitesmoke;
@@ -138,37 +141,36 @@ hr {
 
 .lead-member {
   width: 100%;
-  height: 400px;
+  /* height: 400px; */
   background-color: beige;
   display: flex;
 }
 .lead-cards {
   margin-top: 30px;
-
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
   font-size: 10px;
 }
 .lead-card {
   text-align: center;
-  font-size: 10px;
-  width: 150px;
-  height: 200px;
+  font-size: 15px;
+  width: 180px;
+  height: 240px;
   border-radius: 10px;
 
   img {
     object-fit: cover;
-    width: 150px;
-    height: 170px;
+    width: 180px;
+    height: 200px;
     border-radius: 10px;
   }
 }
 
 .lead-btnx {
   text-transform: capitalize;
-  margin: 40px auto;
+  margin: 30px;
   padding: 10px 18px;
   border: none;
   background-color: blueviolet;
@@ -180,31 +182,28 @@ hr {
 
 .about-us {
   width: 100%;
-  height: 400px;
   background-color: rgb(236, 234, 234);
 
-  padding-top: 50px;
+  display: flex;
+  justify-content: center;
 }
 .about-cards {
-  width: 70%;
-  height: 350px;
-  /* background-color: rgb(215, 218, 229); */
-  border-radius: 10px;
-  margin: auto;
+  margin-top: 30px;
+  padding: 40px;
 
+  width: 70%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  /* flex-direction: column; */
   gap: 50px;
 }
 .about-left {
   width: 50%;
-  height: 100%;
   display: flex;
   align-items: center;
   .about-images {
     width: 100%;
-    height: 90%;
-    margin-left: 20px;
+    height: 300px;
     object-fit: cover;
     border-radius: 10px;
   }
@@ -212,35 +211,33 @@ hr {
 
 .about-right {
   width: 50%;
-  height: 100%;
-  margin: 30px auto;
-}
 
-.about-points {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-}
-.about-point {
-  display: flex;
-  gap: 10px;
-
-  font-size: 17px;
-  line-height: 1.5;
-
-  .custom-icc {
-    padding: 3px;
-    color: green;
+  .about-points {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
   }
-}
+  .about-point {
+    display: flex;
+    gap: 10px;
 
-.Get-a-quote {
-  margin-top: 20px;
-  padding: 8px 18px;
-  border: none;
-  background-color: blueviolet;
-  color: white;
-  border-radius: 3px;
+    font-size: 17px;
+    line-height: 1.5;
+
+    .custom-icc {
+      padding: 3px;
+      color: green;
+    }
+  }
+
+  .Get-a-quote {
+    margin-top: 20px;
+    padding: 8px 18px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 3px;
+  }
 }
 
 /* contents */
@@ -378,4 +375,34 @@ hr {
   background-color: rgb(244, 246, 244);
   border: none;
   border-radius: 4px;
+}
+
+/* mediaaaaaaaaa */
+
+@media (max-width: 768px) {
+  ul {
+    display: none;
+  }
+  .hamburger-icon {
+    display: block;
+  }
+
+  .cardss {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .bg-imx {
+    width: 100%;
+    width: 80%;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .about-us {
+    margin-top: 250px;
+  }
 }
