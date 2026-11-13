@@ -14,7 +14,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 30px;
+  font-size: 20px;
   position: fixed;
 }
 .logo {
@@ -79,6 +79,7 @@ ul {
 }
 
 .cardss {
+  padding:0 30px;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -101,7 +102,7 @@ ul {
 }
 
 hr {
-  width: 90%;
+  width: 85%;
   margin: 30px auto;
   border: none;
   border-top: 2px solid black;
@@ -120,7 +121,7 @@ hr {
 .bg-imx {
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToZ8Sw1Zi-o-hA4z_wNZxRMMuMsvN5-xM1AlIJRmMr1A&s=10");
   object-fit: cover;
-  width: 60%;
+  width: 70%;
   height: 200px;
   margin: 0 auto;
   color: rgb(27, 78, 206);
