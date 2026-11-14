@@ -26,7 +26,9 @@ ul {
   display: flex;
   gap: 40px;
   list-style: none;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 
   li a {
     text-decoration: none;
@@ -35,7 +37,12 @@ ul {
   }
 }
 
-.menu-toggle{
+/* ul li a:hover {
+  animation: reverse 3 ease-in-out;
+  text-decoration: underline;
+  text-decoration-color: rgb(41, 41, 45);
+} */
+.menu-toggle {
   color: white;
   background: none;
   border: none;
@@ -44,11 +51,9 @@ ul {
   display: none;
 }
 
-.menu-toggle .cross-icon{
+.menu-toggle .cross-icon {
   display: none;
 }
-
-
 
 /* herooooooooooooooo */
 .hero {
@@ -79,12 +84,16 @@ ul {
 }
 
 .cardss {
+<<<<<<< HEAD
   padding:0 30px;
+=======
+  padding: 0 30px;
+>>>>>>> 3be37e3 (updated)
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
 }
 .card {
   margin-top: 50px;
@@ -137,6 +146,11 @@ hr {
   background-color: blueviolet;
   color: white;
   border-radius: 3px;
+  cursor: pointer;
+
+  .background-txt-btn:hover {
+    background-color: #0284c7;
+  }
 }
 
 .lead-team {
@@ -196,10 +210,9 @@ hr {
   justify-content: center;
 }
 .about-cards {
-  margin-top: 30px;
-  padding: 40px;
+  padding: 40px 30px;
 
-  width: 70%;
+  width: 80%;
   display: flex;
   justify-content: center;
   /* flex-direction: column; */
@@ -329,9 +342,6 @@ hr {
   width: 100%;
   /* height: 550px; */
   padding-top: 20px;
-
-  
-  
 }
 .touch-cards {
   width: 60%;
@@ -371,8 +381,8 @@ hr {
   /* height: 100%; */
   border-radius: 10px;
   margin: 20px 20px;
-  color: #0284C7;
-  background-color:  #799dab;
+  color: #0284c7;
+  background-color: #799dab;
 }
 
 .end-btnx {
@@ -385,6 +395,9 @@ hr {
 }
 .book-call-btn,
 .proposal-btn {
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
   padding: 10px;
   background-color: rgb(244, 246, 244);
   border: none;
@@ -394,6 +407,7 @@ hr {
 /* footer */
 
 footer {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-top: 50px;
   padding-top: 50px;
   width: 100%;
@@ -403,52 +417,54 @@ footer {
   text-align: center;
 }
 
- #footer-txt {
-    max-width: 400px;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-
-
+#footer-txt {
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
 
 /* mediaaaaaaaaa */
 
 @media (max-width: 650px) {
-
-    ul {
+  header {
+    display: flex;
+    justify-content: space-around;
+    gap: 17rem;
+  }
+  ul {
     display: flex;
     flex-direction: column;
+
     position: absolute;
-    top: 80px; /* Matches your header height */
+    top: 80px;
     right: 0%;
-    width: 50%;
+    width: 100%;
     background-color: #6baecd;
-    border-radius: 0 0 5% 5%;
+    border-radius: 0 0 1% 1%;
     align-items: center;
     cursor: pointer;
     overflow: hidden;
 
-    
-
-    /* Hidden state for smooth slide */
     max-height: 0;
     padding: 0;
     opacity: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.4s ease;
-  
+    transition:
+      max-height 0.4s ease,
+      opacity 0.3s ease,
+      padding 0.4s ease;
   }
-ul.show {
-    max-height: 400px; /* Large enough to fit all links */
-    padding: 20px 0;
+  ul.show {
+    max-height: 400px;
+    padding: 20px 50px;
     opacity: 1;
+    align-items: flex-end;
+    justify-content: flex-end;
   }
 
   .menu-toggle {
     display: block;
   }
-
 
   .cardss {
     display: flex;
@@ -470,9 +486,8 @@ ul.show {
     display: flex;
     justify-content: center;
     align-items: center;
-  flex-wrap: wrap;
-
-}
+    flex-wrap: wrap;
+  }
   .about-cards {
     flex-direction: column;
     justify-content: center;
@@ -481,14 +496,17 @@ ul.show {
 
     line-width: 200px;
   }
-  .about-right  .about-left {
+  .about-right {
+    width: 100%;
+  }
+  .about-left {
     width: 100%;
   }
 
   .point-txt {
-    p {
-      line-width: 200px;
-    }
+    /* p {
+      line-width: 400px;
+    } */
   }
 
   .touch-cards {
@@ -497,9 +515,10 @@ ul.show {
     align-items: center;
   }
   .touch-right {
-    width: 90%;
+    width: 100%;
   }
   .touch-left {
-    width: 90%;
+    width: 100%;
+    text-align: left;
   }
 }
