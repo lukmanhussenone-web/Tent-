@@ -78,17 +78,14 @@ ul {
   width: 45%;
   /* height: 150px; */
 }
+
 .right {
   width: 50%;
   /* height: 150px; */
 }
 
 .cardss {
-<<<<<<< HEAD
   padding:0 30px;
-=======
-  padding: 0 30px;
->>>>>>> 3be37e3 (updated)
   display: flex;
   justify-content: center;
   flex-direction: row;
